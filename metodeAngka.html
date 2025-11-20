@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+        // getElementById = memilih id wrap 
+        // innerHTML = menulis konten 
+
+        // ---- Metode angka ---
+        // ada tofixed(), toString(), random(), min(a, b, c), max(a, b, c)
+        angka1 = 12;
+        angka2 = 15.321314;
+        var angkaBaru = angka2.toFixed(2);
+        // hasilnya akan mendapatkan 15.32
+        // toFixed digunakan untuk mengmbil berapa angka di belakang koma
+        // (2) menyatakan berapa angka di belakang koma
+
+        var angkaHuruf = angka1.toString() + angka2;
+        // hasilnya akan mendapatkan 1215.321314; karna angka 1 sudah di ubah menjadi string 
+        // mengubah angka menjadi string
+
+        var angkaRandom = math.random().toFixed(2);
+        // akan menghasilkan angka random 
+        // dapat di kombinasikan dengan toFixed jadi nanti hasilnya lebih singkat hanya mengambil
+        // dua angka di belakang koma
+
+        var angkaKecil = math.min(1, 2, 3);
+        // akan mencari nilai paling kecil 
+        // dimulai dengan math
+        // bisa di isi dengan variabel yang isinya angka 
+
+        var angkaKecil = math.max(1, 2, 3);
+        // akan mencari nilai paling besar
+        // dimulai dengan math
+        // bisa di isi dengan variabel yang isinya angka 
+
+
+        // metode angka lanjutan 
+        // round(), ceil(), floor(), object method (contoh = abs, log) r
+        // random specific formula -> math.floor(math.random() * x) + y;
+
+        varRound = angka2.round();
+        // round di gunakan untuk menghasilkan nilai bulat atau penyederhanaan
+        // dalam varRound itu akan menghasilkan nilai 15
+
+        varCeil = angka2.ceil();
+        // ceil akan menghasilkan nilai bulat yang lebih besar walaupun 
+        // di belakang koma nilainnya lebih mendekati penyederhanaan kebawah
+
+        varFloor = angka2.floor();
+        // floor akan menghasilkan nilai bulat yang lebih kecil walaupun 
+        // di belakang komma nilainya lebih mendekati penyederhanaan keatas
+
+
+        // -- contoh penggunaan metode angka -- 
+        x = 10; // range atau jarakk batas atasnya 
+        y = 1; // batas minimal atau batas bawahnya 
+        math.floor(math.random() * x) + y;
+
+
+        document.getElementById('wrap').innerHTML = 'code pertama';
+    </script>
+</body>
+</html>

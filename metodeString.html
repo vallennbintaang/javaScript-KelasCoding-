@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+        // getElementById = memilih id wrap 
+        // innerHTML = menulis konten 
+
+        // ---- Metode string ---
+        // length, indexOf, lastIndexOf, search, charAt
+        // toUpperCase(), toLowerCase() replace
+        // substring (start, end), substr(start, length)
+        // parseInt, parseFloat
+
+        var nama = "valen bintang pamungkas";
+
+        namaLength = nama.length;
+        // digunakan untuk mengetahui ada berapa jumlah kata
+        // akan menghasilkan 23 
+
+        namaIndexOF = nama.indexOf("g");
+        // akan mencari huruf yang di cari dan menampilkan pada 
+        // urutan berapa huruf tersebut
+
+        namaLastIndexOf = nama.lastIndexOf("n");
+        // sama seperti indexOf tapi urutannya di mulai dari belakang 
+
+        namaSearch = nama.search("bintang");
+        // mirip dengan indexOf fungsinya, tapi untuk kedepannnya search 
+        // akan berguna
+
+        namaCharAt = nama.charAt(4);
+        // dia akan mencari tapi yang di cari bukan urutannya tapi hurufnya 
+        // yang di inputkan adalah angkanya
+
+        namaUpperCase = nama.toUpperCase();
+        // akan membuat huruf menjadi kapital semua 
+
+        namaLowerCase = nama.toLowerCase();
+        // akan membuat huruf menjadi kecil semua
+
+        namaReplace = nama.replace('bintang', 'rama');
+        // akan mengubah atau menganti nilai yang sebelumnya
+        // di butuhkan 2 inputan untuk mengetahui apa yang di ubah dan menjadi apa
+
+        namaSubString = nama.substring(0, 5);
+        // mengambil isi variabel yang di mulai dari 
+        // urutan berapa sampai urutan berapa 
+        // perhatikan juga nilai akhirnya karna nilai akhir tidak di eksekusi 
+
+        namaSubStr = nama.substr(0, 4);
+        // mirip substring tapi substr dia mulai dari urutan berapa sampai panjangnya berapa 
+
+        var masukkan = '20';
+        ubahInt = parseInt(masukkan) + 10;
+        // di gunakan untuk mengubah yang ada di string menjadi nilai angka bulat 
+        // biasannya di gunakan supaya nilai penjumlahan tidak ada yang inputannya huruf
+        // cara penulisannya 
+        // variabel = parseInt(nilai);
+
+        var masukkan2 = '3.14'
+        ubahFloat = parseFloat(masukkan2);
+        // mirip parseint tapi ini nilainya untuk koma atau desimal 
+        // cara penulisannya 
+        // variabel = parseFloat(nilai);
+
+
+
+
+        document.getElementById('wrap').innerHTML = ubahInt;
+    </script>
+</body>
+</html>

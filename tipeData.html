@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+        // getElementById = memilih id wrap 
+        // innerHTML = menulis konten 
+
+        // VARIABEL
+        // -------------------
+        // nama dimulai dengan huruf, atau $ atau _
+        // nama boleh mengandung huruf, angka, dolar, underscore 
+        // nama itu case sensitive
+        // ada 'reserved word' yang tidak boleh di gunakan
+
+        // TIPE DATA STRING
+        // tipe string dimulai dengan tanda petik di deklarasinya
+        // tipe data string bisa diawali dengan ('petik 1'), atau ("petik 2")
+        var x = 'bintang';
+
+        // TIPE DATA NUMBER
+        // tidak di mulai dengan tanda petik
+        // tanda koma(,) di ganti dengan tanda titik(.)
+        var angka = 100;
+        var angka2 = 100.23;
+
+        // kiri = nama => kanan = nilai
+        var gabungAngka = angka + angka2 
+
+        // operator matematika + - * / %
+        var x = 10;
+        var y = 2;
+        var tambah = x + y;
+        // tambah akan menghasilkan 12
+        var kurang = x - y;
+        // kurang akan menghasilkan 8
+        var kali   = x * y;
+        // kali akan menghasilkan 20
+        var bagi   = x / y;
+        // bagi akan menghasilkan 5
+        var modulo = x % y;
+        /// modulo akan menghasilkan 0 karna 10 bagi dua hasilnya bulat 5
+
+        angka1 = 12;
+        angka2 = 15;
+
+        angka1++; // increment // menjumlahkan atau menambahkan 1 angka
+        angka2--; // decrement // mengurangi 1 angka
+
+        // mengubah atau menambahkan nilai yang sudah ada
+        // nilai ini akan mengubah nilai sebelumnya menjadi yang baru  
+        angka2 += angka;
+
+
+
+        document.getElementById('wrap').innerHTML = x;
+    </script>
+</body>
+</html>
