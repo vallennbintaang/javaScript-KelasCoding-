@@ -27,9 +27,40 @@
         document.getElementById('wrap').innerHTML = 'code pertama';
         }
 
+        //-- Parameter -- 
+        // parameter adalah nilai yang di definisikan di dalam kurung fungsi 
+        // parameter bisa lebih dari 1 dengan memisahkan menggunakan koma
+        // 
+
+        function printText(nama, umur, kelas){
+            var text = nama + umur + kelas;
+            document.getElementById('wrap').innerHTML = text;
+        }
+
+        // memanggil fungsi dengan parameter bisa di tulis dengan 
+        // nama fungsi(isi parameter1, isi parameter2);
+        // jikak string jangaan lupa kasih petik 
+        printText('valen', '21', 'sija');
+
         // memanggil fungsi 
         // fungsi tidak akan berjalan kalau tidak di panggil
         text();
+
+
+        // --- Return ---
+        // return pada javascript berguna untuk membalikan atau mengembalikann nilai 
+        // sebanyak apapun variabel yang ada di dalam fungsi jika tidak di kembalikan sama aja 
+        // tidak di definisikan
+
+        function printText(){
+            var a = "valen";
+            var b = " bintang";
+
+            return a + b;
+        }
+
+        var text = printText() + ' yang baru';
+        document.getElementById('warp').innerHTML = text();
     </script>
 </body>
 </html>

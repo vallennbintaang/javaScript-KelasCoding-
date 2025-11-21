@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+
+        // -- ARRAY --
+        // array di mulai dari angka 0 
+        // array di mulai dengan kurung []
+        // memanggil isi array bisa dengan tulis nama array[kasih urutan keberapa]
+        // di dalam array bisa lebih dari 1 tipe data
+        
+        // var kelas = ['budi', 'anton', 'satrio'];
+        // cara mengubah nilai di dalam array 
+        // masukkan var array[dan isi mana yang di ubah] = menjadi apa;
+        // kelas[2] = 12;
+
+
+        // metode dalam array
+        // sort, reverse, concat, length, join(separator)
+
+        // -- sort --
+        // mengurutkan dari nama yang paling dahulu 
+        // kalau string berarti dari a - z
+        // kalau integer dari 1 - berapapun
+
+        var namaSort = ['anton', 'bubur', 'ijo'];
+        document.getElementById('wrap').innerHTML = namaSort.sort();
+
+        // -- reverse -- 
+        // mengurutkan dari yang paling belakang kedepan
+
+        var namaReverse = ['mie', 'ayam', 'bakso'];
+        document.getElementById('wrap').innerHTML = namaReverse.reverse();
+
+        // -- concat --
+        // mengabungkan dua array 
+
+        var namaConcat1 = ['tebu', 'ireng', 'kuali'];
+        var namaConcat2 = ['jika', 'rasa'];
+
+        var gabung = namaConcat1.concat(namaConcat2);
+        document.getElementById('wrap').innerHTML = gabung;
+
+        // -- length --
+        // dalam array length berfungsi untuk menghitung banyak nya array 
+        var namaLength = ['nama', 'kelaas', 'alamat'];
+        document.getElementById('wrap').innerHTML = namaLength.length;
+
+        // -- join --
+        // memisahkan isi array tapi bisa menentukan pemisahnya 
+        // seperti ( | ), ( / ), ataupun ( . )
+
+        var namaJoin = ['indie', 'index', 'budreg'];
+        document.getElementById('wrap').innerHTML = namaJoin.join( " | " );
+
+
+        // metode array lainnya 
+        // splice -> add(mulai, hapus, tambah), splice -> remove
+        // pop, push, shift(), unshift();
+
+        //splice isinya (mulai dari mana, hapus berapa, tambah apa)
+        // jika tidak ada yang di hapus isi 0 
+
+        var namaSplice = ['antimo', 'paracetamol', 'ambeyen'];
+
+        // di definisikan di luar print 
+        // nama variabel.splice (urutan keberapa, hapus berapa isi array di depan urutan tambahnya , ganti apa)
+        namaSplice.splice(2, 0, 'anton');
+        document.getElementById('wrap').innerHTML = namaSplice;
+
+        // -- pop -- push --
+        // menghapus nilai terakhir
+        // tapi bisa juga menampilkan nilai yang di hapus
+        
+        //menghapus nilai terakhir 
+
+        var namaPop = ['pip', 'pup', 'pep'];
+
+        // dengan menulis ini nilai terakhir akan hilang
+        namaPop.pop();
+
+        // push untuk menambahkan nama yang hilang
+        namaPop.push('emilia');
+
+        // dengan menulis variabel dulu nanti yang tampil nilai yang hilang 
+        // tapi jarang di gunakan 
+        var hilang = namaPop.pop();
+
+        document.getElementById('wrap').innerHTML = namaPop;
+
+        // -- shift -- unshift -- 
+
+        namaShift = ['shuf', 'shut', 'sret'];
+
+        // shift mirip dengan pop bedannya yang di hilangkan yang di awal
+        namaShift.shift();
+        // kalau unshift mirip push tapi dia juga yang di ubah yang depan 
+        namaShift.unshift('beta');
+        document.getElementById('wrap').innerHTML = namaShift;
+
+
+    </script>
+</body>
+</html>
