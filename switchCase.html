@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+        // -- switch case --
+        // peran switch case hanya untuk operator == 
+        // yaitu apakah isi dari operator sama dengan casenya
+        
+        var nama = 'budi';
+        // dimulai dari case( diikuti parameter )
+        switch ( nama ) {
+            // kemudian case dan isi case apakah sama dengan isi operatornnya
+            // jika iyaa jalan, jika tidak lanjut di bawahnya
+            case 'endy':
+                document.getElementById('wrap').innerHTML = 'nama saya endy';
+                // break berguna jika isi parameter yang di cari sudah benar program berhenti
+                break;
+            case 'budi':
+                document.getElementById('wrap').innerHTML = 'nama saya budi';
+                break;
+            case 'suromo':
+                document.getElementById('wrap').innerHTML = 'nama saya suromo';
+                break;
+            case 'tegal':
+                document.getElementById('wrap').innerHTML = 'nama saya tegal';
+                break;
+        }
+    </script>
+</body>
+</html>

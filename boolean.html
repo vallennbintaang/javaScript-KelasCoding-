@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+    <style>
+        /* jika ingin styling css dengan id menggunakan (#) sharp */
+        #wrap{
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+<body>
+    <div id="wrap"></div>
+    <script>
+        // -- tipe data boolean --
+        // hanya memiliki dua output yaitu true dan false
+        // tipe data boolean biasanya di pakai untuk kondisi seperti if else atau pun while
+
+        var x = true;
+        var y = false;
+
+
+        // if dan else 
+        // merupakan control flow untuk mengatur alur logika
+        // operator logika yaitu == != > >= < <= 
+
+        // == artinnya sama dengan 
+        // != artinnya tidak sama dengan 
+        // > artinya lebih dari 
+        // >= artinya lebih dari sama dengan
+        // < artinnya kurang dari 
+        // <= artinya kurang dari sama dengan
+
+        // mengabungkan 2 syarat 
+        // menggunakan dan dengan && ... yang berarti kedua nilai harus true 
+        // menggunakan atau dengan || .. yang berarti  salah satu saja sudah cukup untuk menghasilkan true
+        // logika dan 
+        // true && true => true 
+        // false && true => false
+        // logika or
+        // true || true => true
+        // false || true => true 
+
+
+        var uangku    = 2500;
+        var uangTemen = 15000;
+        var barang    = 10000;
+
+        // --- IF ELSE
+        // if(syarat){
+        //     kalau terpenuhi (sama saja jika syarat bernilai benar kode akan berjalan)
+        // } else {
+        //     kalau tidak terpenuhi (kalau syarat bernilai false kode ini yang berjalan)
+        // }
+
+        // -- IF ELSE IF ELSE
+        // if(syarat){
+        //     kalau terpenuhi (sama saja jika syarat bernilai benar kode akan berjalan)
+        // } else if ( syarat lain ){
+        //      kalau terpenuhi program berjalan
+        //}  else {
+        //     kalau tidak terpenuhi (kalau syarat bernilai false kode ini yang berjalan)
+        // }
+
+        // menggunakan operator logika
+        if (uang == barang){
+            document.getElementById('wrap').innerHTML = 'transaksi berhasil';
+        } else {
+            document.getElementById('wrap').innerHTML = 'transaksi gagal';
+        }
+
+        // menggunakan mengabungkan 2 syarat
+        if (uangku == barang || uangTemen == barang){
+            document.getElementById('wrap').innerHTML = 'transaksi berhasil';
+        } else {
+            document.getElementById('wrap').innerHTML = 'transaksi gagal';
+        }
+
+        // else if
+        if (uangku == barang){
+            document.getElementById('wrap').innerHTML = 'transaksi gagal uang kurang';
+        } else if (uangTemen == barang) {
+            document.getElementById('wrap').innerHTML = 'transaksi berhasil, di bantu uang temen';
+        } else {
+            document.getElementById('wrap').innerHTML = 'transaksi gagal';
+        }
+
+        // nested if
+        // di pakai tergantung kodisi karnan ada logika and dan or
+        if( uangTemen > barang ){
+            if (uangTemen > barang*2){
+                document.getElementById('wrap').innerHTML = 'transaksi 2 barang berhasil';
+            } else {
+                document.getElementById('wrap').innerHTML = 'transaksi hanya bisa 1 barang';
+            }
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
